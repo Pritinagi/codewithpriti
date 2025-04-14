@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Priti’s Dreamland</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starry Canvas Background -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top dream-nav">
+        <div class="container-fluid">
+            <h3><a href="index.html" class="navbar-brand glowing-text" aria-label="Homepage">CodeWithPriti</a></h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-0">
+                    <li class="nav-item"><a class="nav-link dream-link" href="index.html#home" aria-label="Go to Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link dream-link" href="index.html#skills" aria-label="Go to Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link dream-link" href="index.html#projects" aria-label="Go to Projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link dream-link active" href="contact.html" aria-label="Go to Contact">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav mb-0">
+                    <li class="nav-item mx-2">
+                        <button id="theme-toggle" class="nav-link dream-btn" aria-label="Toggle Theme">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dream-btn" download="pdf/Codewithpriti.pdf" href="#" aria-label="Download Resume">Download Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="container mt-5 dream-section">
+        <h2 class="display-5 text-center mb-4 anim dream-text">Send a Whisper</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card dream-card anim">
+                    <i class="bi bi-envelope mb-3 twinkling-icon" style="color: #ffb3e6;"></i>
+                    <h5 class="card-title">Email</h5>
+                    <p class="card-text">Send a message through the mists to reach me.</p>
+                    <a href="mailto:pritinagig@gmail.com" class="dream-btn" aria-label="Send Email">Cast a Spell</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card dream-card anim">
+                    <i class="bi bi-github mb-3 twinkling-icon" style="color: #d9ccff;"></i>
+                    <h5 class="card-title">GitHub</h5>
+                    <p class="card-text">Explore my code gardens under starry skies.</p>
+                    <a href="https://github.com/pritinagi" target="_blank" class="dream-btn" aria-label="View GitHub">Visit GitHub</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card dream-card anim">
+                    <i class="bi bi-linkedin mb-3 twinkling-icon" style="color: #b3e6ff;"></i>
+                    <h5 class="card-title">LinkedIn</h5>
+                    <p class="card-text">Connect in the realm of professional magic.</p>
+                    <a href="https://www.linkedin.com/in/priti-nagi" target="_blank" class="dream-btn" aria-label="View LinkedIn">Visit LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 dream-footer">
+        <p class="dream-text">© 2025 Priti | Woven with Stardust</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn rounded-circle dream-btn" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

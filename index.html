@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithPriti | Digital Dreamland</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starry Canvas Background -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top dream-nav">
+        <div class="container-fluid">
+            <h3><a href="#" class="navbar-brand glowing-text" aria-label="Homepage">CodeWithPriti</a></h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-0">
+                    <li class="nav-item"><a class="nav-link dream-link" href="#home" aria-label="Go to Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link dream-link" href="#skills" aria-label="Go to Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link dream-link" href="#projects" aria-label="Go to Projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link dream-link" href="contact.html" aria-label="Go to Contact">Contact</a></li>
+                </ul>
+                <ul class="navbar-nav mb-0">
+                    <li class="nav-item mx-2">
+                        <button id="theme-toggle" class="nav-link dream-btn" aria-label="Toggle Theme">
+                            <i class="bi bi-moon-stars-fill"></i> <!-- Icon changes based on theme -->
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dream-btn" download="pdf/Codewithpriti.pdf" href="#" aria-label="Download Resume">Download Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container content mx-auto mt-5 pt-5 dream-section">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-8">
+                <p class="display-4 title dream-text anim">Welcome to My Dreamland</p>
+                <p class="display-7 mt-4 anim dream-desc">I’m Priti, a Full-Stack Web Developer weaving magical web experiences with code.</p>
+                <p class="display-7 mt-1 mb-4 anim dream-desc">Explore my world of React, Python, and Django, where every project sparkles with creativity.</p>
+                <a href="#projects" class="dream-btn anim" aria-label="Explore Projects">Discover My Magic</a>
+            </div>
+            <div class="col-12 col-md-4 pb-5 mt-3 mt-md-0">
+                <div class="dream-img-container">
+                    <img src="images/BW.jpeg" alt="Priti in Dreamland" class="img-fluid anim rounded-circle glowing-img">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mt-5 dream-section">
+        <h2 class="display-5 text-center mb-4 anim dream-text">My Magical Skills</h2>
+        <div class="row text-center">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="skillcard dream-card anim">
+                    <i class="bi bi-code-slash mb-3 twinkling-icon" style="color: #b3e6ff;"></i>
+                    <h5 class="card-title">HTML & CSS</h5>
+                    <p class="card-text">Crafting enchanted layouts that dance across screens.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="skillcard dream-card anim">
+                    <i class="bi bi-braces mb-3 twinkling-icon" style="color: #ffb3e6;"></i>
+                    <h5 class="card-title">JavaScript</h5>
+                    <p class="card-text">Casting spells for interactive web adventures.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="skillcard dream-card anim">
+                    <i class="bi bi-bootstrap mb-3 twinkling-icon" style="color: #d9ccff;"></i>
+                    <h5 class="card-title">Bootstrap</h5>
+                    <p class="card-text">Weaving responsive designs with magical ease.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="skillcard dream-card anim">
+                    <i class="bi bi-file-earmark-code mb-3 twinkling-icon" style="color: #b3e6ff;"></i>
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text">Brewing robust backend potions.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="skillcard dream-card anim">
+                    <i class="bi bi-react mb-3 twinkling-icon" style="color: #ffb3e6;"></i>
+                    <h5 class="card-title">React</h5>
+                    <p class="card-text">Building fast, sparkling front-end realms.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="skillcard dream-card anim">
+                    <i class="bi bi-cogs mb-3 twinkling-icon" style="color: #d9ccff;"></i>
+                    <h5 class="card-title">Django</h5>
+                    <p class="card-text">Creating high-performance web enchantments.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="skillcard dream-card anim">
+                    <i class="bi bi-database mb-3 twinkling-icon" style="color: #b3e6ff;"></i>
+                    <h5 class="card-title">MySQL</h5>
+                    <p class="card-text">Guarding data treasures with speed.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="skillcard dream-card anim">
+                    <i class="bi bi-gear mb-3 twinkling-icon" style="color: #ffb3e6;"></i>
+                    <h5 class="card-title">DevOps</h5>
+                    <p class="card-text">Deploying dreams with Docker and AWS.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="skillcard dream-card anim">
+                    <i class="bi bi-github mb-3 twinkling-icon" style="color: #d9ccff;"></i>
+                    <h5 class="card-title">GitHub</h5>
+                    <p class="card-text">Collaborating in magical code gardens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mt-5 dream-section">
+        <h2 class="display-5 text-center mb-4 anim dream-text">My Spellbound Projects</h2>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card project-card dream-card anim">
+                    <img src="images/stock.jpeg" class="card-img-top glowing-img" alt="Starlit Stocks" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">Starlit Stocks</h5>
+                        <p class="card-text">A celestial platform for tracking stock constellations.</p>
+                        <a href="#" class="dream-btn" aria-label="View Starlit Stocks">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card project-card dream-card anim">
+                    <img src="images/travel.jpeg" class="card-img-top glowing-img" alt="WanderWisp" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">WanderWisp</h5>
+                        <p class="card-text">A dreamy travel planner glowing with real-time magic.</p>
+                        <a href="#" class="dream-btn" aria-label="View WanderWisp">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card project-card dream-card anim">
+                    <img src="images/journalweb.jpeg" class="card-img-top glowing-img" alt="Moonlit Moods" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">Moonlit Moods</h5>
+                        <p class="card-text">A journal to capture emotions under starry skies.</p>
+                        <a href="#" class="dream-btn" aria-label="View Moonlit Moods">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="container mt-5 dream-section">
+        <h2 class="display-5 text-center mb-4 anim dream-text">My Starry Achievements</h2>
+        <div id="achievementsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card dream-card anim">
+                        <i class="bi bi-award mb-3 twinkling-icon" style="color: #ffb3e6;"></i>
+                        <h5 class="card-title">Python Sorceress</h5>
+                        <p class="card-text">Mastered Python and web magic in a 3-month quest.</p>
+                        <p><strong>Date:</strong> August 2023</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card dream-card anim">
+                        <i class="bi bi-trophy mb-3 twinkling-icon" style="color: #b3e6ff;"></i>
+                        <h5 class="card-title">Hackathon Star</h5>
+                        <p class="card-text">Won a mystical hackathon for an inventory spell.</p>
+                        <p><strong>Date:</strong> December 2023</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card dream-card anim">
+                        <i class="bi bi-award mb-3 twinkling-icon" style="color: #d9ccff;"></i>
+                        <h5 class="card-title">Web Enchanter</h5>
+                        <p class="card-text">Completed a year-long journey in full-stack wizardry.</p>
+                        <p><strong>Date:</strong> March 2022</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#achievementsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#achievementsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 dream-footer">
+        <p class="dream-text">© 2025 Priti | Woven with Stardust</p>
+        <p>
+            <a href="https://www.linkedin.com/in/priti-nagi" target="_blank" class="dream-link" aria-label="LinkedIn Profile">LinkedIn</a> |
+            <a href="https://github.com/pritinagi" target="_blank" class="dream-link" aria-label="GitHub Profile">GitHub</a> |
+            <a href="#" target="_blank" class="dream-link" aria-label="Twitter Profile">Twitter</a>
+        </p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="btn rounded-circle dream-btn" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
